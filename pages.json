@@ -1,0 +1,151 @@
+{
+	
+	//在pages.json文件中新加insetLoader属性
+	"insetLoader": {
+		//配置
+		"config": {
+			//将需要引入的组件名起了个confirm的名字在下面label中使用
+			//右侧"<test ref='confirm' />"为需要插入的组件标签
+			"confirm": "<globalModal ref='gm' @gmConfirm='gmConfirm' @gmCancel='gmCancel'/>"
+		},
+		// 全局配置  
+		//需要挂在的组件名
+		"label": ["confirm"],
+		//根元素的标签类型 也就是插入到页面哪个根元素下默认为div 但是uniapp中需要写为view
+		"rootEle": "div"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/all/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path": "pages/all/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/all/person",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		}
+	],
+  //分包加载配置，此配置为小程序的分包加载机制。
+	"subPackages":[
+		{
+			"root":"pages/subPacks/sub1", //子包的根目录
+			"pages":[
+				{
+					"path": "list",
+					"style": {
+						"navigationBarTitleText": "子包1"
+					}
+				},
+				{
+					"path": "components/uni-ui-select",
+					"style": {
+						"navigationBarTitleText": "uni-ui-select"
+					}
+				},
+				{
+					"path": "components/uni-ui-section",
+					"style": {
+						"navigationBarTitleText": "uni-ui-section"
+					}
+				},
+				{
+					"path": "components/dropdown",
+					"style": {
+						"navigationBarTitleText": "dropdown"
+					}
+				},
+				{
+					"path": "components/panel",
+					"style": {
+						"navigationBarTitleText": "panel"
+					}
+				},
+				{
+					"path": "components/forms",
+					"style": {
+						"navigationBarTitleText": "forms"
+					}
+				},
+				{
+					"path": "components/globalModal",
+					"style": {
+						"navigationBarTitleText": "全局模态框"
+					}
+				}
+			]
+		},
+		{
+			"root":"pages/subPacks/sub2", //子包的根目录
+			"pages":[
+				{
+					"path": "list",
+					"style": {
+						"navigationBarTitleText": "子包2"
+					}
+				}
+			]
+		},
+		{
+			"root":"pages/subPacks/login", //子包的login目录
+			"pages":[
+				{
+					"path": "login",
+					"style": {
+						"navigationBarTitleText": "登录页"
+					}
+				}
+			]
+		},
+		{
+			"root":"pages/subPacks/utils", //utils
+			"pages":[
+			]
+		},
+		{
+			"root":"pages/subPacks/components", //components
+			"pages":[
+			]
+		},
+		{
+			"root":"pages/subPacks/api", //api
+			"pages":[
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#4985F6",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/all/home",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/all/person",
+				"iconPath": "static/logo.png",
+				"selectedIconPath": "static/logo.png",
+				"text": "我的"
+			}
+		]
+	}
+}
