@@ -9,12 +9,12 @@ const app = new Vue({
     store,
     ...App
 })
-
+//为了内置的uni.$u.http
 require('./pages/subPacks/utils/http.js')(app)
 app.$mount()
 
 
-import './pages/router'; //引入拦截
+import './pages/router'; //引入路由拦截
 // #endif
 
 // #ifdef VUE3
@@ -49,8 +49,8 @@ Vue.component('formDate', formDate)
 /**************************************************************************
 原型链
 */
-import XEUtils from 'xe-utils'
-Vue.prototype.$utils = XEUtils
+// import XEUtils from 'xe-utils'
+// Vue.prototype.$utils = XEUtils
 
 
 // import * as fn from "@/utils/fn.js"
