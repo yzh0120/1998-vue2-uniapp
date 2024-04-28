@@ -1,4 +1,5 @@
 <template>
+  <!-- 全局组件第三步 -->
   <div>
     <u-button @click="base">基础使用</u-button>
     <u-button @click="cancel">带取消</u-button>
