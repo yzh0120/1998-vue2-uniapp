@@ -26,7 +26,7 @@ export default {
       
       show: false,//展示
       title: '标题',
-      content: 'uView的目标是成为uni-app生态最优秀的UI框架',
+      content: '',
       showCancelButton:false,//显示取消按钮
     }
   },
