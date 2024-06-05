@@ -1,5 +1,14 @@
 <script>
-	export default {
+export default {
+	//在App.vue中没有data只有globalData
+	globalData: {
+		App:"1.2.2.2"
+	},
+	methods: {
+		alert() { 
+			console.log(1)
+		},
+	},
 		onLaunch: function() {
 			console.log('App 启动')
 		},
