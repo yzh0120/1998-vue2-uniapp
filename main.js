@@ -14,7 +14,7 @@ require('./pages/subPacks/utils/http.js')(app)
 app.$mount()
 
 
-import './pages/router'; //引入路由拦截
+// import './pages/router'; //引入路由拦截  感觉没必要所以注释掉了
 // #endif
 
 // #ifdef VUE3
@@ -51,13 +51,6 @@ Vue.component('formDate', formDate)
 */
 // import XEUtils from 'xe-utils'
 // Vue.prototype.$utils = XEUtils
-
-
-// import * as fn from "@/utils/fn.js"
-// Vue.prototype.$fn = fn;
-
-// import * as validator from "@/utils/validate"
-// Vue.prototype.$validator = validator;
 
 import * as fn from "@/pages/subPacks/utils/fn.js"
 Vue.prototype.$fn = fn;
