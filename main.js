@@ -44,8 +44,8 @@ Vue.component('panel', panel)
 import formDate from "@/pages/subPacks/components/datecom.vue"
 Vue.component('formDate', formDate)
 //全局组件第一步
-// import globalModal from "@/pages/subPacks/components/globalModal.vue"
-// Vue.component('globalModal', globalModal)
+import globalModal from "@/pages/subPacks/components/globalModal.vue"
+Vue.component('globalModal', globalModal)
 /**************************************************************************
 原型链
 */

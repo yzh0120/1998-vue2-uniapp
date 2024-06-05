@@ -36,7 +36,8 @@ export default {
         { name: "dropdown", url: "dropdown" },
         { name: "panel", url: "panel" },
         { name: "forms", url: "forms" },
-        { name: "全局模态框", url: "globalModal" }
+        { name: "全局模态框", url: "globalModal" },
+        { name: "提示", url: "alert" }
       ]
     }
   },

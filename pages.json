@@ -1,19 +1,19 @@
 {
 	//全局组件第二步
 	// //在pages.json文件中新加insetLoader属性
-	// "insetLoader": {
-	// 	//配置
-	// 	"config": {
-	// 		//将需要引入的组件名起了个confirm的名字在下面label中使用
-	// 		//右侧"<test ref='confirm' />"为需要插入的组件标签
-	// 		"confirm": "<globalModal ref='gm' @gmConfirm='gmConfirm' @gmCancel='gmCancel'/>"
-	// 	},
-	// 	// 全局配置  
-	// 	//需要挂在的组件名
-	// 	"label": ["confirm"],
-	// 	//根元素的标签类型 也就是插入到页面哪个根元素下默认为div 但是uniapp中需要写为view
-	// 	"rootEle": "div"
-	// },
+	"insetLoader": {
+		//配置
+		"config": {
+			//将需要引入的组件名起了个confirm的名字在下面label中使用
+			//右侧"<test ref='confirm' />"为需要插入的组件标签
+			"confirm": "<globalModal ref='gm' @gmConfirm='gmConfirm' @gmCancel='gmCancel'/>"
+		},
+		// 全局配置  
+		//需要挂在的组件名
+		"label": ["confirm"],
+		//根元素的标签类型 也就是插入到页面哪个根元素下默认为div 但是uniapp中需要写为view
+		"rootEle": "div"
+	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/all/index",
@@ -79,6 +79,12 @@
 					"path": "components/globalModal",
 					"style": {
 						"navigationBarTitleText": "全局模态框"
+					}
+				},
+				{
+					"path": "components/alert",
+					"style": {
+						"navigationBarTitleText": "alert"
 					}
 				}
 			]
