@@ -26,7 +26,8 @@ export function createApp() {
   }
 }
 // #endif
-
+//这是uni的扩展组件的演示地址
+//https://hellouniapp.dcloud.net.cn/pages/extUI/badge/badge
 //uView
 import uView from '@/uni_modules/uview-ui'
 Vue.use(uView)
