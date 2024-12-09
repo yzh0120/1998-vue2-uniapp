@@ -37,8 +37,8 @@ export default {
         { name: "panel", url: "panel" },
         { name: "forms", url: "forms" },
         { name: "全局模态框", url: "globalModal" },
-        { name: "提示", url: "alert" },
-        { name: "toast", url: "toast" }
+        { name: "uni提示", url: "alert" },
+        { name: "全局toast", url: "toast" }
       ]
     }
   },
