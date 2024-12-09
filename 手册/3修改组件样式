@@ -1,0 +1,4 @@
+	//.nav为上一级的class
+	.nav::v-deep .uni-navbar--border {
+		border-bottom-style: none !important;
+	}

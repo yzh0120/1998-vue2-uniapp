@@ -1,0 +1,6 @@
+  computed: {
+    //vuex不能直接在页面上 只能通过计算属性展示
+    title() { 
+      return  this.$store.state.gm.title
+    }
+  }
