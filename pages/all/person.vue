@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import person from '@/pages/subPacks/components/person'
+import person from '@/pages/subPacks/switchTabCom/person'
   export default {
   components: {
     person

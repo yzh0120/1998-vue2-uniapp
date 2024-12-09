@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import homecom from '@/pages/subPacks/components/home'
+import homecom from '@/pages/subPacks/switchTabCom/home'
 export default {
   computed: {
     //vuex不能直接在页面上 只能通过计算属性展示

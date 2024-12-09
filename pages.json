@@ -119,17 +119,17 @@
 			]
 		},
 		{
-			"root":"pages/subPacks/utils", //utils
+			"root":"pages/subPacks/utils", //utils //子包的根目录
 			"pages":[
 			]
 		},
 		{
-			"root":"pages/subPacks/components", //components
+			"root":"pages/subPacks/components", //components //子包的根目录
 			"pages":[
 			]
 		},
 		{
-			"root":"pages/subPacks/api", //api
+			"root":"pages/subPacks/api", //api //子包的根目录
 			"pages":[
 			]
 		}
