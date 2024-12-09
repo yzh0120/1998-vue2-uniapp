@@ -5,6 +5,14 @@
     <u-button @click="cancel">带取消</u-button>
     <u-button @click="cb">回调函数</u-button>
     <u-button @click="asyncClose">异步关闭</u-button>
+
+    <!-- 自定义 -->
+    <u-modal :show="show" :title="title" :content='content'>
+      <template #confirmButton>
+        <button type="primary" open-type="launchApp" app-parameter="wechat" @click="()=>{show = false}">返回OA</button>
+        <!-- <button type="primary" open-type="launchApp" app-parameter="wechat" style="border: 1px solid transparent;position: absolute;top: 10rpx;right: 10rpx;" size="mini">返回OA</button> -->
+      </template>
+    </u-modal>
   </div>
 </template>
 
@@ -12,7 +20,9 @@
   export default {
     data(){
       return {
-
+        show:false,
+        title:"标题",
+        content:"content"
       }
   },
     mounted() {
