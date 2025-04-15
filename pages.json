@@ -94,6 +94,13 @@
 						"navigationBarTitleText": "toast"
 					}
 				}
+				,
+				{
+					"path": "components/myUp",
+					"style": {
+						"navigationBarTitleText": "myUp"
+					}
+				}
 			]
 		},
 		{

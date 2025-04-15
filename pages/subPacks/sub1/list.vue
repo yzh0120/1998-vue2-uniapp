@@ -38,7 +38,8 @@ export default {
         { name: "forms", url: "forms" },
         { name: "全局模态框", url: "globalModal" },
         { name: "uni提示", url: "alert" },
-        { name: "全局toast", url: "toast" }
+        { name: "全局toast", url: "toast" },
+        { name: "单个文件上传", url: "myUp" }
       ]
     }
   },
