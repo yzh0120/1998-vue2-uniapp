@@ -25,8 +25,10 @@ export function download(params = {}, downloadPath) {
 
     if (!downloadPath) {
       console.log("没有下载路径")
-    } else if (downloadPath = "filedownload") {
+    } else if (downloadPath == "filedownload") {
       downloadPath = "v1/base/file/download"
+    }else{
+      downloadPath = downloadPath
     }
   
     uni.showLoading({
