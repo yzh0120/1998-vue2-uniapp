@@ -30,7 +30,7 @@ export default {
     }
   },
   mounted() {
-    userApi.login({userName:"caoheli", password:"12345611"}).then((res) => {
+    userApi.login({userName:"system", password:"123456"}).then((res) => {
       console.log(res,"0090909")
     })
   },

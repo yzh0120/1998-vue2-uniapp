@@ -21,6 +21,7 @@ import apiConfig from '@/pages/subPacks/utils/ip.js';
 module.exports = (vm) => {
 	// 初始化请求配置
 	uni.$u.http.setConfig((config) => {
+		console.log(config,"config1")
 		/* config 为默认全局配置*/
     config.baseURL = apiConfig.url; /* 根域名 */
     config.timeout = 10000
@@ -29,10 +30,20 @@ module.exports = (vm) => {
 
 	// 请求拦截
 	uni.$u.http.interceptors.request.use((config) => { // 可使用async await 做异步操作
+
+		/**
+		 * 
+		 * 
+		if(!token){
+			uni.navigateTo({})
+			return Promise.reject(config)
+		}
+		 */
+		console.log(config,"config2")
     config.header['Authorization'] = "Bearer " + uni.getStorageSync('token')
 		return config
-	}, config => { // 可使用async await 做异步操作
-		return Promise.reject(config)
+	}, error => { // 可使用async await 做异步操作
+		return Promise.reject(error)
 	})
 
 	// 响应拦截
