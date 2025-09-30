@@ -1,6 +1,12 @@
 <template>
   <div>
-person
+个人中心
+<image
+    :showLoading="true"
+    src="../imgs/static/test.png"
+    width="80px"
+    height="80px"
+  ></image>
   </div>
 </template>
 

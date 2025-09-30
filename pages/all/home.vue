@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     {{ title }}
+    <!-- 引用子包的文件 -->
     <homecom></homecom>
   </div>
 </template>

@@ -6,7 +6,10 @@
 -->
 <template>
   <div>
+    <!-- 引用子包的文件 -->
     <person></person>
+    
+<!-- -->
   </div>
 </template>
 

@@ -12,6 +12,12 @@
 -->
 <template>
   <div>
+    <image
+    :showLoading="true"
+    src="./static/test.png"
+    width="80px"
+    height="80px"
+  ></image>
     <!-- <u-list @scrolltolower="scrolltolower">
       <u-list-item v-for="(item, index) in list" :key="index">
         <u-cell :title="item.name"></u-cell>

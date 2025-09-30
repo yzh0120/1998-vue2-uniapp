@@ -139,6 +139,16 @@
 			"root":"pages/subPacks/api", //api //子包的根目录
 			"pages":[
 			]
+		},
+		{
+			"root":"pages/subPacks/imgs", //imgs //子包的根目录
+			"pages":[
+			]
+		},
+		{
+			"root":"pages/subPacks/switchTabCom", //imgs //子包的根目录
+			"pages":[
+			]
 		}
 	],
 	"globalStyle": {
