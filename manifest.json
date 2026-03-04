@@ -1,6 +1,6 @@
 {
-    "name" : "unn",
-    "appid" : "__UNI__00A5141",
+    "name" : "sdbuniapp",
+    "appid" : "__UNI__BBF3B5D",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -50,14 +50,14 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "wxeb8690ab049d9e65",
+        "appid" : "wx4105c0c288da69f4",
         "setting" : {
             "urlCheck" : false
         },
         "usingComponents" : true,
-        "optimization" :{ 
+        "optimization" : {
             "subPackages" : true
-         }
+        }
     },
     "mp-alipay" : {
         "usingComponents" : true
@@ -71,5 +71,19 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "2",
+    "h5" : {
+        "title" : "闪电保",
+        "router" : {
+            "base" : "/asdb/"
+        },
+        "devServer" : {
+            "https" : true
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        }
+    }
 }

@@ -1,3 +1,4 @@
+
 const state = {
 	userInfo: {}
 }
@@ -10,6 +11,10 @@ const mutations = {
 	setUserInfo(state, data) {
 		state.userInfo = data
 	},
+
+	clearUserInfo(state) {
+		state.userInfo = {};
+	}
 }
 
 const actions = {

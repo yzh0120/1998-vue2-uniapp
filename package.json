@@ -1,5 +1,5 @@
 {
-  "name": "zksj_uniapp",
+  "name": "sdbuniapp",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -8,18 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yzh0120/zksj_uniapp.git"
+    "url": "http://218.17.62.58:28182/yinzhou/sdbuniapp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yzh0120/zksj_uniapp/issues"
-  },
-  "homepage": "https://github.com/yzh0120/zksj_uniapp#readme",
   "dependencies": {
     "dayjs": "^1.11.4",
-    "vue-inset-loader": "^1.2.6",
-    "xe-utils": "^3.5.6"
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^2.0.8-beta.4",
+    "xe-utils": "^3.5.6",
+    "js-base64": "^3.7.5"
   }
 }
